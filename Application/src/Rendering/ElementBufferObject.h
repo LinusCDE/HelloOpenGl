@@ -1,6 +1,14 @@
 #pragma once
+
+#ifdef LINUX
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+#endif
+
+#ifdef WINDOWS
 #include "GLEW/glew.h"
 #include "GLFW/glfw3.h"
+#endif
 
 class ElementBufferObject
 {

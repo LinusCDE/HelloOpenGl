@@ -1,14 +1,22 @@
 #include "ShaderProgram.h"
 
+#ifdef LINUX
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
+#endif
+
+#ifdef WINDOWS
 #include "GLEW/glew.h"
 #include "GLFW/glfw3.h"
+#include "GLM/glm.hpp"
+#endif
 
 #include <vector>
 #include <iostream>
 #include <sstream>
 #include <fstream>      // std::ifstream
 #include "Model.h"
-#include "GLM/glm.hpp"
 
 using namespace std;
 

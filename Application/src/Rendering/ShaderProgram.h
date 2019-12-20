@@ -1,7 +1,14 @@
 #pragma once
 
 #include <string>
+
+#ifdef LINUX
+#include <glm/gtc/matrix_transform.hpp>
+#endif
+
+#ifdef WINDOWS
 #include "GLM/gtc/matrix_transform.hpp"
+#endif
 
 class Model;
 

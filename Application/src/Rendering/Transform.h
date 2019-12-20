@@ -1,5 +1,12 @@
 #pragma once
+
+#ifdef LINUX
+#include <glm/glm.hpp>
+#endif
+
+#ifdef WINDOWS
 #include "GLM/glm.hpp"
+#endif
 
 class Transform
 {

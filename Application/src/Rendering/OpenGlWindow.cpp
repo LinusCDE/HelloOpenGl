@@ -1,7 +1,14 @@
 #include "OpenGlWindow.h"
 
+#ifdef LINUX
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+#endif
+
+#ifdef WINDOWS
 #include "GLEW/glew.h"
 #include "GLFW/glfw3.h"
+#endif
 
 #include <iostream>
 #include "ShaderProgram.h"

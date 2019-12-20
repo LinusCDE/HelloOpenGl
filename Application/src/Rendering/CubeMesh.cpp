@@ -1,7 +1,15 @@
 #include "CubeMesh.h"
 
+#ifdef LINUX
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+#endif
+
+#ifdef WINDOWS
 #include "GLEW/glew.h"
 #include "GLFW/glfw3.h"
+#endif
+
 #include "Vertex.h"
 #include "Colors.h"
 
